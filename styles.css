@@ -1,0 +1,243 @@
+:root {
+  --background: #061522;
+  --primary: #2F7BFF;
+  --secondary: #17C964;
+  --accent: #39DDBE;
+  --text: #F8FBFF;
+  --muted-text: #93A7BD;
+  --panel: #0E2133;
+  --border: #1D3A52;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(47, 123, 255, 0.22), transparent 40%),
+    radial-gradient(circle at 95% 100%, rgba(23, 201, 100, 0.14), transparent 35%),
+    var(--background);
+  color: var(--text);
+  font-family: "Space Grotesk", "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0 1.5rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  color: var(--muted-text);
+  margin-top: 0.45rem;
+}
+
+.site-nav {
+  backdrop-filter: blur(6px);
+  background-color: rgba(6, 21, 34, 0.86);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0.65rem 0;
+}
+
+.site-nav a {
+  border: 1px solid transparent;
+  border-radius: 0.45rem;
+  color: var(--text);
+  display: inline-block;
+  padding: 0.45rem 0.7rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background-color: rgba(47, 123, 255, 0.2);
+  border-color: var(--primary);
+}
+
+.site-nav a.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: var(--text);
+}
+
+main {
+  padding: 1.75rem 0 2.25rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+}
+
+.panel h2 {
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.panel p {
+  color: var(--muted-text);
+}
+
+.placeholder {
+  align-items: center;
+  background-color: rgba(47, 123, 255, 0.12);
+  border: 1px dashed var(--primary);
+  border-radius: 0.6rem;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  min-height: 170px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.placeholder.large {
+  min-height: 260px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  margin-top: 1rem;
+}
+
+.card {
+  background: rgba(14, 33, 51, 0.68);
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.text-link {
+  color: var(--accent);
+  display: inline-block;
+  margin-top: 0.7rem;
+  text-decoration: none;
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  max-width: 640px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #0A1B2C;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  color: var(--text);
+  font: inherit;
+  padding: 0.7rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: 2px solid transparent;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 0.45rem;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  padding: 0.7rem 0.9rem;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+  filter: brightness(1.08);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 1.25rem;
+  padding: 1.2rem 0 1.5rem;
+}
+
+.footer-content {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer-content a {
+  color: var(--accent);
+  margin-right: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-content a:hover,
+.footer-content a:focus-visible {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  color: var(--muted-text);
+}
+
+@media (max-width: 700px) {
+  .site-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .site-nav ul {
+    gap: 0.2rem;
+  }
+
+  .site-nav a {
+    font-size: 0.95rem;
+  }
+}
