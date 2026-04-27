@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arbitrage Bot Tracker | What is Arbitrage?</title>
+  <title>Prediction Market Arbitrage Bot | What is Arbitrage?</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Arbitrage Bot Tracker</h1>
+      <h1>Prediction Market Arbitrage Bot</h1>
       <p class="tagline">Core concept page for pricing inefficiencies and hedge mechanics.</p>
     </div>
   </header>
@@ -19,40 +19,67 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="arbitrage.html">What is Arbitrage?</a></li>
-        <li><a href="markets.html">Prediction Markets</a></li>
+        <li><a href="markets.html">Arbitraging Prediction Markets</a></li>
         <li><a href="trades.html">Trades &amp; Margins</a></li>
-        <li><a href="performance.html">Live P&amp;L</a></li>
+        <li><a href="performance.html">PnL Snapshot</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="panel">
+  <main class="container home-main">
+    <section class="hero-image reveal" aria-label="Arbitrage concept visual">
+      <img
+        src="assets/arbitrage-hero.png"
+        alt="What is arbitrage visual showing opposite positions and guaranteed profit logic."
+      >
+    </section>
+
+    <section class="home-story reveal">
       <h2>What is Arbitrage?</h2>
       <p>
-        Arbitrage is the process of placing offsetting positions when price differences across venues create a
-        favorable spread. This placeholder section will later include examples, assumptions, and risk notes.
+        Arbitrage means taking opposite positions on the same event when two markets disagree on price. If the
+        combined cost is less than the payout, your edge is locked in before the outcome is decided.
       </p>
-      <div class="placeholder" role="img" aria-label="Arbitrage concept visual placeholder">
-        Optional Arbitrage Diagram Placeholder
+    </section>
+
+    <section class="panel reveal">
+      <h2>Quick Navigation</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Home</h3>
+          <p>Return to the project overview and see the full arbitrage workflow at a glance.</p>
+          <a class="text-link" href="index.html">Open Home</a>
+        </article>
+        <article class="card">
+          <h3>Arbitraging Prediction Markets</h3>
+          <p>
+            Connect this arbitrage logic directly to Polymarket and Kalshi contract data.
+          </p>
+          <a class="text-link" href="markets.html">Open Arbitraging Prediction Markets</a>
+        </article>
+        <article class="card">
+          <h3>Trades &amp; Margins</h3>
+          <p>See how positions are executed and validated against margin and cost thresholds.</p>
+          <a class="text-link" href="trades.html">Open Trades &amp; Margins</a>
+        </article>
+        <article class="card">
+          <h3>PnL Snapshot</h3>
+          <p>View daily, weekly, and all-time performance after arbitrage opportunities are taken.</p>
+          <a class="text-link" href="performance.html">Open PnL Snapshot</a>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <div>
-        <a href="index.html">Home</a>
-        <a href="arbitrage.html">What is Arbitrage?</a>
-        <a href="markets.html">Prediction Markets</a>
-        <a href="trades.html">Trades &amp; Margins</a>
-        <a href="performance.html">Live P&amp;L</a>
-        <a href="contact.html">Contact</a>
+      <div>        <a href="contact.html">Contact</a>
       </div>
       <p><a href="mailto:ianregister1@gmail.com">ianregister1@gmail.com</a></p>
       <p>Ian Register</p>
     </div>
   </footer>
+  <script src="interactions.js"></script>
 </body>
 </html>

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arbitrage Bot Tracker | Live P&amp;L</title>
+  <title>Prediction Market Arbitrage Bot | PnL Snapshot</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Arbitrage Bot Tracker</h1>
+      <h1>Prediction Market Arbitrage Bot</h1>
       <p class="tagline">Performance snapshot page for ongoing strategy outcomes.</p>
     </div>
   </header>
@@ -19,23 +19,45 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="arbitrage.html">What is Arbitrage?</a></li>
-        <li><a href="markets.html">Prediction Markets</a></li>
+        <li><a href="markets.html">Arbitraging Prediction Markets</a></li>
         <li><a href="trades.html">Trades &amp; Margins</a></li>
-        <li><a class="active" href="performance.html">Live P&amp;L</a></li>
+        <li><a class="active" href="performance.html">PnL Snapshot</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="panel">
-      <h2>Performance Tracking</h2>
-      <p>
-        This placeholder section will report daily, weekly, and all-time P&amp;L totals with summary statistics
-        and trend views.
-      </p>
-      <div class="placeholder large" role="img" aria-label="Performance chart placeholder">
-        P&amp;L Chart / Graph Placeholder
+  <main class="container home-main">
+    <section class="hero-image reveal" aria-label="Live performance snapshot visual">
+      <img
+        src="assets/performance-hero.png"
+        alt="Live P and L snapshot showing all-time performance and equity growth."
+      >
+    </section>
+
+    <section class="panel reveal">
+      <h2>Quick Navigation</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Home</h3>
+          <p>Return to the project overview and full strategy summary.</p>
+          <a class="text-link" href="index.html">Open Home</a>
+        </article>
+        <article class="card">
+          <h3>What is Arbitrage?</h3>
+          <p>Review the pricing mismatch concept that powers this strategy.</p>
+          <a class="text-link" href="arbitrage.html">Open What is Arbitrage?</a>
+        </article>
+        <article class="card">
+          <h3>Arbitraging Prediction Markets</h3>
+          <p>See how Polymarket and Kalshi prices are matched before execution.</p>
+          <a class="text-link" href="markets.html">Open Arbitraging Prediction Markets</a>
+        </article>
+        <article class="card">
+          <h3>Trades &amp; Margins</h3>
+          <p>See execution details, spread thresholds, and margin checks.</p>
+          <a class="text-link" href="trades.html">Open Trades &amp; Margins</a>
+        </article>
       </div>
     </section>
   </main>
@@ -43,16 +65,12 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div>
-        <a href="index.html">Home</a>
-        <a href="arbitrage.html">What is Arbitrage?</a>
-        <a href="markets.html">Prediction Markets</a>
-        <a href="trades.html">Trades &amp; Margins</a>
-        <a href="performance.html">Live P&amp;L</a>
         <a href="contact.html">Contact</a>
       </div>
       <p><a href="mailto:ianregister1@gmail.com">ianregister1@gmail.com</a></p>
       <p>Ian Register</p>
     </div>
   </footer>
+  <script src="interactions.js"></script>
 </body>
 </html>

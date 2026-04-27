@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arbitrage Bot Tracker | Home</title>
+  <title>Prediction Market Arbitrage Bot | Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Arbitrage Bot Tracker</h1>
+      <h1>Prediction Market Arbitrage Bot</h1>
       <p class="tagline">A lightweight scaffold for tracking sports betting arbitrage strategy performance.</p>
     </div>
   </header>
@@ -19,56 +19,53 @@
       <ul>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="arbitrage.html">What is Arbitrage?</a></li>
-        <li><a href="markets.html">Prediction Markets</a></li>
+        <li><a href="markets.html">Arbitraging Prediction Markets</a></li>
         <li><a href="trades.html">Trades &amp; Margins</a></li>
-        <li><a href="performance.html">Live P&amp;L</a></li>
+        <li><a href="performance.html">PnL Snapshot</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="panel">
-      <h2>Project Overview</h2>
+  <main class="container home-main">
+    <section class="hero-image reveal" aria-label="Arbitrage dashboard hero graphic">
+      <img
+        src="assets/home-hero.png"
+        alt="Sports betting meets math graphic for prediction market arbitrage."
+      >
+    </section>
+
+    <section class="home-story reveal">
+      <h2>How The Bot Works</h2>
       <p>
-        This project website outlines a sports betting arbitrage bot concept. Content here is placeholder text
-        that introduces the goal: compare odds and prediction-market prices, detect pricing gaps, and visualize
-        potential risk-adjusted returns.
+        I built a bot that tracks sports event prices across prediction markets and places paired positions when a
+        mismatch creates edge. The strategy aims to reduce directional risk by covering opposite outcomes across
+        platforms, turning price inefficiencies into repeatable opportunities.
       </p>
     </section>
 
-    <section class="panel">
-      <h2>Feature Graphic</h2>
-      <div class="placeholder large" role="img" aria-label="Dashboard or trading visualization placeholder">
-        Dashboard / Trading Visualization
-      </div>
-    </section>
-
-    <section class="panel">
+    <section class="panel reveal">
       <h2>Quick Navigation</h2>
       <div class="card-grid">
         <article class="card">
-          <h3>Arbitrage Basics</h3>
-          <p>Placeholder overview of how no-arbitrage opportunities appear across platforms.</p>
-          <a class="text-link" href="arbitrage.html">Go to What is Arbitrage?</a>
+          <h3>What is Arbitrage?</h3>
+          <p>Learn the core concept behind locking in edge with two-sided positioning.</p>
+          <a class="text-link" href="arbitrage.html">Open Arbitrage Page</a>
         </article>
-
         <article class="card">
-          <h3>Prediction Markets</h3>
-          <p>Placeholder summary of market sources, event contracts, and API-driven pricing feeds.</p>
-          <a class="text-link" href="markets.html">Go to Prediction Markets</a>
+          <h3>Arbitraging Prediction Markets</h3>
+          <p>See how Polymarket and Kalshi contracts are compared through API inputs.</p>
+          <a class="text-link" href="markets.html">Open Arbitraging Prediction Markets</a>
         </article>
-
         <article class="card">
           <h3>Trades &amp; Margins</h3>
-          <p>Placeholder summary of trade execution types, costs, and estimated edge calculations.</p>
-          <a class="text-link" href="trades.html">Go to Trades &amp; Margins</a>
+          <p>Review trade structures, spread checks, and margin calculations.</p>
+          <a class="text-link" href="trades.html">Open Trades Page</a>
         </article>
-
         <article class="card">
-          <h3>Live P&amp;L</h3>
-          <p>Placeholder preview for ongoing performance snapshots and historical result summaries.</p>
-          <a class="text-link" href="performance.html">Go to Live P&amp;L</a>
+          <h3>PnL Snapshot</h3>
+          <p>Track daily, weekly, and all-time performance snapshots.</p>
+          <a class="text-link" href="performance.html">Open PnL Snapshot</a>
         </article>
       </div>
     </section>
@@ -76,17 +73,12 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <div>
-        <a href="index.html">Home</a>
-        <a href="arbitrage.html">What is Arbitrage?</a>
-        <a href="markets.html">Prediction Markets</a>
-        <a href="trades.html">Trades &amp; Margins</a>
-        <a href="performance.html">Live P&amp;L</a>
-        <a href="contact.html">Contact</a>
+      <div>        <a href="contact.html">Contact</a>
       </div>
       <p><a href="mailto:ianregister1@gmail.com">ianregister1@gmail.com</a></p>
       <p>Ian Register</p>
     </div>
   </footer>
+  <script src="interactions.js"></script>
 </body>
 </html>

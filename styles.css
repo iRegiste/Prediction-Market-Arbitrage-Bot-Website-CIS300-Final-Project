@@ -92,6 +92,80 @@ main {
   padding: 1.75rem 0 2.25rem;
 }
 
+.home-main {
+  display: grid;
+  gap: 0;
+  max-width: 1280px;
+}
+
+.hero-image {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.hero-image::after {
+  background: linear-gradient(
+    180deg,
+    rgba(6, 21, 34, 0) 0%,
+    rgba(6, 21, 34, 0) 62%,
+    rgba(6, 21, 34, 0.22) 82%,
+    rgba(6, 21, 34, 0.9) 100%
+  );
+  bottom: 0;
+  content: "";
+  height: 12%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+.home-story {
+  background: linear-gradient(180deg, rgba(6, 21, 34, 0.15) 0%, rgba(14, 33, 51, 0.9) 30%, rgba(14, 33, 51, 0.95) 100%);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
+  margin-top: -2px;
+  padding: 1.2rem 1.2rem 1.35rem;
+}
+
+.home-story h2 {
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.home-story p {
+  color: #c2d2e5;
+  font-size: 1.08rem;
+}
+
+.js-enabled .reveal {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition: opacity 0.6s ease, transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js-enabled .reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.js-enabled .reveal.stagger-1 {
+  transition-delay: 0.08s;
+}
+
+.js-enabled .reveal.stagger-2 {
+  transition-delay: 0.16s;
+}
+
 .panel {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -211,11 +285,20 @@ main {
 .footer-content {
   display: grid;
   gap: 0.55rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer-content > div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
 }
 
 .footer-content a {
   color: var(--accent);
-  margin-right: 0.85rem;
   text-decoration: none;
 }
 
@@ -239,5 +322,18 @@ main {
 
   .site-nav a {
     font-size: 0.95rem;
+  }
+
+  .hero-image {
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+
+  .home-story {
+    border-radius: 0 0 0.75rem 0.75rem;
+    padding: 1rem;
+  }
+
+  .home-story p {
+    font-size: 1rem;
   }
 }
