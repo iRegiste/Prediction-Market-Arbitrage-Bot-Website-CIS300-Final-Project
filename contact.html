@@ -19,7 +19,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="arbitrage.html">What is Arbitrage?</a></li>
-        <li><a href="markets.html">Arbitraging Prediction Markets</a></li>
+        <li><a href="markets.html">What is a Prediction Market?</a></li>
         <li><a href="trades.html">Trades &amp; Margins</a></li>
         <li><a href="performance.html">PnL Snapshot</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
@@ -27,32 +27,32 @@
     </div>
   </nav>
 
-  <main class="container">
-    <section class="panel">
-      <h2>Contact</h2>
-      <p>Use this form placeholder to capture project questions, ideas, or feedback.</p>
+  <main class="container contact-main">
+    <section class="hero-image contact-hero reveal" aria-label="Contact background graphic with message form">
+      <img
+        src="assets/contact-bg.png"
+        alt="Contact background with left project message area and open space for the form."
+      >
+      <div class="contact-form-shell">
+        <h2>Send a Message</h2>
 
-      <form action="#" method="post" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name">
+        <form action="#" method="post" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Message subject">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Message subject" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <section class="panel">
-      <h2>Return Home</h2>
-      <p>Back to the main project overview page.</p>
-      <a class="text-link" href="index.html">Go to Home</a>
+          <button type="submit">Send Message</button>
+          <p id="contact-status" class="status-text" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -65,5 +65,7 @@
       <p>Ian Register</p>
     </div>
   </footer>
+  <script src="interactions.js"></script>
 </body>
 </html>
+
