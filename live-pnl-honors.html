@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="api-base" content="">
+  <title>Prediction Market Arbitrage Bot | Live PnL Tracking (Honors Contract)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Prediction Market Arbitrage Bot</h1>
+      <p class="tagline">Backend-powered live tracking page for honors contract requirements.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arbitrage.html">What is Arbitrage?</a></li>
+        <li><a href="markets.html">What is a Prediction Market?</a></li>
+        <li><a href="trades.html">Trades &amp; Margins</a></li>
+        <li><a href="performance.html">PnL Snapshot</a></li>
+        <li><a class="active" href="live-pnl-honors.html">Live PnL (Honors)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container home-main">
+    <section class="panel reveal">
+      <h2>Live PnL Tracking (Honors Contract)</h2>
+      <p>This interactive chart reads from the backend CSV API and plots total equity over time.</p>
+      <p id="pnl-status" class="status-text">Loading latest rows...</p>
+      <div class="chart-controls" role="group" aria-label="Chart range selection">
+        <button type="button" class="chart-btn" data-range="30">30D</button>
+        <button type="button" class="chart-btn" data-range="90">90D</button>
+        <button type="button" class="chart-btn active" data-range="all">All</button>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="pnl-chart" aria-label="Line chart of total equity over time"></canvas>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Return to Main Site</h2>
+      <p>Use the main project pages for regular assignment content and navigation.</p>
+      <a class="text-link" href="performance.html">Back to PnL Snapshot</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p><a href="mailto:ianregister1@gmail.com">ianregister1@gmail.com</a></p>
+      <p>Ian Register</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="interactions.js"></script>
+</body>
+</html>

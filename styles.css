@@ -206,6 +206,43 @@ main {
   background: rgba(47, 123, 255, 0.09);
 }
 
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+
+.chart-btn {
+  background: rgba(6, 21, 34, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.38rem 0.72rem;
+}
+
+.chart-btn:hover,
+.chart-btn:focus-visible {
+  border-color: var(--accent);
+}
+
+.chart-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+}
+
+.chart-canvas-wrap {
+  margin-top: 0.9rem;
+  height: clamp(320px, 54vh, 520px);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: rgba(10, 27, 44, 0.82);
+  padding: 0.7rem;
+}
+
 .js-enabled .reveal {
   opacity: 0;
   transform: translateY(26px) scale(0.985);
